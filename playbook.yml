@@ -1,0 +1,12 @@
+- hosts: all
+  tasks:
+    - name: installing packages
+      yum: name={{item}} state=present
+      with_items:
+        - git
+        - httpd
+        - tree
+        - maven
+        - docker
+    - name: create user
+      user: name=dinesh state=present
