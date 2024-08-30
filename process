@@ -1,0 +1,18 @@
+1. create a instance with basic config
+    add iam role with admin permissions
+    
+2. install terraform
+    terraform.sh
+
+3. create main.tf, variable.tf and .tfvars
+    When we have multiple configurations for terraform to create resource
+    like: dev,test,uat,prod.
+
+4. terraform init		: initialize the provider plugins on backend
+
+5. terraform apply		: to create resources
+    terraform apply -var-file="dev.tfvars"
+
+6. terraform destroy	: to delete resources
+    terraform destroy -var-file="dev.tfvars"
+
