@@ -15,4 +15,3 @@
 
 6. terraform destroy	: to delete resources
     terraform destroy -var-file="dev.tfvars"
-
